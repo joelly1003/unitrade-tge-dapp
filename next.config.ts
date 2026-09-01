@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  webpack: (config) => {
+    config.externals.push(
+      'pino-pretty',
+      'lokijs',
+      'encoding',
+      '@x402/core/client',
+      '@x402/evm/exact/client',
+      '@x402/evm/upto/client',
+      '@x402/svm/exact/client',
+      '@x402/evm',
+      '@x402/svm'
+    );
+    return config;
+  },
 };
 
 export default nextConfig;
