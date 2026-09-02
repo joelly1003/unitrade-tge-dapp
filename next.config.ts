@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       'pino-pretty',
       'lokijs',
       'encoding',
+      '@react-native-async-storage/async-storage',
       '@x402/core/client',
       '@x402/evm/exact/client',
       '@x402/evm/upto/client',

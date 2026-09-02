@@ -62,10 +62,6 @@ export default function Home() {
       toast.error('Please enter a valid amount.');
       return;
     }
-    if (chain?.unsupported) {
-      toast.error('Wrong network. Please switch to a supported network.');
-      return;
-    }
     setShowConfirmModal(true);
   };
 
